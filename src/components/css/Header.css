@@ -1,86 +1,77 @@
-.header-container {
-    display: flex;   
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .display-button {
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
-  .popup-container {
-    position: relative;
-  }
-  
-  .popup-content {
-    position: absolute;
-    top: 50px;
-    left: -80px;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    width: max-content;
-  }
-  
-  .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
-    z-index: 999;
-  }
-  
-  .group-options,
-  .sort-options {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  
-  select {
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
+/* Base font size for rem units */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
 
-/* 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
+  display: flex;
+  background-color: white;
+  padding: 0.625rem; /* 10px */
+  border-radius: 0.3125rem; /* 5px */
+}
+
+.display-button {
+  background-color: white;
+  border: 0.0625rem solid #ccc; /* 1px */
+  padding: 0.5rem 0.75rem; /* 8px 12px */
+  cursor: pointer;
+  font-size: 1rem; /* 16px */
+  border-radius: 0.3125rem; /* 5px */
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1); /* 0 1px 3px */
+}
+
+.popup-container {
+  position: relative;
+}
+
+.popup-content {
+  position: absolute;
+  top: 3.125rem; /* 50px */
+  left: -5rem; /* -80px */
+  background-color: white;
+  border: 0.0625rem solid #ccc; /* 1px */
+  padding: 1.25rem; /* 20px */
+  border-radius: 0.3125rem; /* 5px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0 4px 8px */
+  z-index: 1000;
+  width: max-content;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.group-options,
+.sort-options {
+  margin-bottom: 0.9375rem; /* 15px */
+}
+
+label {
+  font-size: 0.875rem; /* 14px */
+  margin-bottom: 0.3125rem; /* 5px */
+}
+
+select {
+  padding: 0.3125rem; /* 5px */
+  border-radius: 0.25rem; /* 4px */
+  border: 0.0625rem solid #ccc; /* 1px */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .group-options, .sort-options {
-    display: flex;
-    align-items: center;
+
+  .popup-content {
+    top: 2.5rem; /* Adjusted for smaller screens */
+    left: 0;
   }
-  
-  label {
-    margin-right: 10px;
-  }
-  
-  select {
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-   */
+}

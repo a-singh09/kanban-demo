@@ -1,28 +1,48 @@
+/* Base font size for rem units */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
 .ticket-card {
-    background-color: #fefefe;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
-  .ticket-card h4 {
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .ticket-card p {
-    margin: 5px 0;
-    font-size: 14px;
+  background-color: #fefefe;
+  padding: 0.9375rem; /* 15px */
+  margin-bottom: 0.625rem; /* 10px */
+  border-radius: 0.3125rem; /* 5px */
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1); /* 0 1px 3px */
+}
+
+.ticket-card h4 {
+  margin-bottom: 0.625rem; /* 10px */
+  font-size: 1rem; /* 16px */
+  font-weight: bold;
+}
+
+.ticket-card p {
+  margin: 0.3125rem 0; /* 5px 0 */
+  font-size: 0.875rem; /* 14px */
+}
+
+.ticket-id {
+  text-transform: uppercase;
+  color: grey;
+}
+
+.user-id {
+  color: grey;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ticket-card {
+    padding: 0.75rem; /* Adjust padding for smaller screens */
+    margin-bottom: 0.5rem; /* Adjust margin for smaller screens */
   }
 
-  .ticket-id {
-    text-transform: uppercase;
-    color: grey;
+  .ticket-card h4 {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
   }
-  
-  .user-id {
-    color: grey;
+
+  .ticket-card p {
+    font-size: 0.8125rem; /* Adjust font size for smaller screens */
   }
-  
+}
