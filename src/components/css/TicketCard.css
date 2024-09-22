@@ -1,0 +1,28 @@
+.ticket-card {
+    background-color: #fefefe;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ticket-card h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .ticket-card p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .ticket-id {
+    text-transform: uppercase;
+    color: grey;
+  }
+  
+  .user-id {
+    color: grey;
+  }
+  

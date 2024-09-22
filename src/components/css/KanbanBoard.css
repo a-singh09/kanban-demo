@@ -1,0 +1,23 @@
+.kanban-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  .kanban-column {
+ 
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+  
+  .kanban-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .text-grey {
+    color: grey;
+    font-size: 14px;
+  }
+  
